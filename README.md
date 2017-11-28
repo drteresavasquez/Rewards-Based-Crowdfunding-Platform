@@ -38,6 +38,19 @@ rails db:repopulate
 rails s
 ```
 Visit localhost:3000 in web browser for Rails page
+
+## Working With Shared Data
+If you would like to use this project in a team environment, one team member will need to seed the database and then run the following command
+```
+rails db:seed:dump
+```
+All other team members will run the following commands in the console
+``` 
+bundle install
+rails db:migrate
+rails db:seed
+rails s
+```
 ## Report Bugs
 Create an [issue report](https://github.com/drteresavasquez/Rewards-Based-Crowdfunding-Platform/issues/new)
 
